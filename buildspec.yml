@@ -6,8 +6,9 @@ phases:
       python: 3.9
   build:
     commands:
-      - echo "Packaging Lambda function..."
+      - echo "Zipping Lambda code..."
       - zip function.zip lambda_function.py
 artifacts:
   files:
     - function.zip
+    - appspec.yml
